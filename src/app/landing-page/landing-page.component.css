@@ -56,14 +56,6 @@ body, html {
     transition: 0.1s;
   }
   
-.container .btn span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 51500px;
-    transition: 0.05s;
-  }
 .container .btn:hover {
     background-image: url("images/launch.jpg");
     transition-duration: 0.01s;

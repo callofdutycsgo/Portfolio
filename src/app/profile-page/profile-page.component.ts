@@ -9,4 +9,7 @@ export class ProfilePageComponent{
 
   constructor() { }
 
+  scroll(el) {
+    el.scrollIntoView();
+}
 }

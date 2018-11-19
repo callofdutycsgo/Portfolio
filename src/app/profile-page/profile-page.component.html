@@ -23,28 +23,28 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a (click)="scroll(target1)" >WHO</a></li>
+        <li><a (click)="scroll(target2)" >WHAT</a></li>
+        <li><a (click)="scroll(target3)" >WHERE</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
+<div #target1 class="container-fluid bg-1 text-center">
   <h2 class="margin">Who Am I?</h2>
   <h3>I'm a UI/UX Designer who Codes in Javascript.</h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div #target2 class="container-fluid bg-2 text-center">
   <h2 class="margin">What Am I?</h2>
   <h3>I Create things on the Internet.</h3>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div #target3 class="container-fluid bg-3 text-center">    
   <h2 class="margin">Where To Find Me?</h2><br>
 
   <div class="row">
