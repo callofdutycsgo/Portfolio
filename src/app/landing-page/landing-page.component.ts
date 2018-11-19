@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Routes, RouterModule,Router  } from '@angular/router';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { Router  } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
