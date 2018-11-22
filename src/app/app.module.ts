@@ -4,19 +4,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DialogDataComponent } from './profile-page/profile-page.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfilePageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    DialogDataComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogDataComponent]
 })
 export class AppModule { }
 
