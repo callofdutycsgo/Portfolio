@@ -23,10 +23,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+          <li><a (click)="goToPage('dashboard')" >DASHBOARD</a></li>
         <li><a (click)="scroll(target1)" >WHO</a></li>
         <li><a (click)="scroll(target2)" >WHAT</a></li>
         <li><a (click)="scroll(target3)" >WHERE</a></li>
-        <li><a (click)="scroll(target4)" >SOCIAL</a></li>
+       
       </ul>
     </div>
   </div>
@@ -51,7 +52,7 @@
 
 
 <!-- Footer -->
-<footer #target4 class="container-fluid bg-4 text-center">
+<footer class="container-fluid bg-4 text-center">
   <h2>Thanks for Visiting</h2> 
 <ul class="social-networks square spin-icon">
   <li><a href="#" onclick="window.open( 'https://www.linkedin.com/in/danielmarkj/s', 'name', 'location=no,scrollbars=yes,status=no,toolbar=no,resizable=yes' )" class="icon-linkedin">LinkedIn</a></li>

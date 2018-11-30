@@ -1,3 +1,4 @@
+
 body, html {
     height: 100%;
     margin: 0;
@@ -42,37 +43,49 @@ body, html {
     -ms-transform: translate(-50%, -50%);
     background-color: rgb(0, 0, 0);
     color:  white;
-    font-size: 16px;
+    font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 7px;
     text-align: center;
 }
-.btn span {
-    cursor: pointer;
-    display: inline-block;
+  a.animated-button.thar-three {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: block;
     position: relative;
-    transition: 0.1s;
-  }
-  
-.container .btn:hover {
-    background-image: url("images/launch.jpg");
-    transition-duration: 0.01s;
-    color: rgba(255, 255, 255, 0.705);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-position: center;
+   
+    width: 112px;
+	border: 2px solid rgb(85, 85, 85);
+	transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+
 }
+a.animated-button.thar-three:hover {
+	color: rgb(160, 160, 160) !important;
+	background-color: transparent;
+    text-shadow: darkslategrey;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+    width: 100%;
+    transition:all .1s ease-in-out;
 
-.container .btn:hover span {
-    padding-right: 35px;
-    font-size: 190px;
-    width: 1300px;
-  }
-  
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+    content: '';
 
-.container .btn:hover span:after {
-    opacity: 1;
-    right: 0;
-    transition-duration: 1s;
-  }
+    border-radius: 7px;
+	color: #000 !important;
+    background:#324e4e;
+     text-transform: capitalize;
+	transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}

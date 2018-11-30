@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
-
+import { Router  } from '@angular/router';
 
 export interface DialogData {
 
@@ -13,7 +13,8 @@ export interface DialogData {
 })
 export class ProfilePageComponent{
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+    private router: Router) { }
 
   scroll(el) {
     el.scrollIntoView();
@@ -29,6 +30,9 @@ export class ProfilePageComponent{
       console.log('The dialog was closed');
     });
   }
+  goToPage(pageName:string){
+    this.router.navigate([`${pageName}`]);
+  }
 }
 
 @Component({
@@ -42,5 +46,7 @@ constructor(    public dialogRef: MatDialogRef<DialogDataComponent>,
   onNoClick(): void {
     this.dialogRef.close();
   }
+
+
 }
 
